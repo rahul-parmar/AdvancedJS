@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>New HMTL document by NewJect</title>
+</head>
+
+<body>
+    <form name="myForm" id="paymentAddress">
+        <table cellspacing="2" cellpadding="2" border="1">
+            <caption>Payment Address</caption>
+            <tr>
+                <td align="right">City</td>
+                <td>
+                    <input type="text" name="city" id="city" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">State</td>
+                <td>
+                    <input type="text" name="state" id="state" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <label for="checkBox">Shipping Address SameAs PaymentAddress
+        <input type="checkbox" name="checkBox" id="checkBox" /> </label>
+    <form name="myForm" id="shippingAddress">
+        <table cellspacing="2" cellpadding="2" border="1">
+            <caption>Shipping Address</caption>
+            <tr>
+                <td align="right">City</td>
+                <td>
+                    <input type="text" name="city" id="city" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">State</td>
+                <td>
+                    <input type="text" name="state" id="state" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.41/system.js"></script>
+    <script>
+        System.config({
+            meta: {
+                format: 'cjs'
+            }
+        });
+        System.import('app.js');
+    </script>
+</body>
+
+</html>
